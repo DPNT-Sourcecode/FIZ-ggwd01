@@ -7,7 +7,7 @@ public class FizzBuzzSolution {
         StringBuilder builder = new StringBuilder();
       //  for (int i = 1; i <= number; i++) {
             if ((number % 5 == 0) && (number % 3 == 0)) {
-                wrapper(builder, "fizzbuzz");
+                wrapper(builder, "fizz buzz");
             } else if (number % 5 == 0) {
                 wrapper(builder, "buzz");
             } else if (number % 3 == 0) {
