@@ -9,8 +9,8 @@ public class FizzBuzzSolution {
         String result = String.valueOf(number);
         if ((result.contains("5") || number % 5 == 0) &&
             (result.contains("3") ||number % 3 == 0)) {
-            if (result.contains("5") && number % 5 == 0 &&
-                    result.contains("3") && number % 3 == 0) {
+            if ((result.contains("5") && number % 5 == 0) ||
+                    (result.contains("3") && number % 3 == 0)) {
                 if (number % 2 == 0) {
                     wrapper(builder, "fizz buzz deluxe");
                 } else {
