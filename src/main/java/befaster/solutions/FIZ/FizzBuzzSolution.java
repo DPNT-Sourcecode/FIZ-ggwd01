@@ -7,7 +7,7 @@ public class FizzBuzzSolution {
         StringBuilder builder = new StringBuilder();
 
         String result = String.valueOf(number);
-        if (number > 10 && result.matches("[1-9]")) {
+        if (number > 10 && result.matches("^[1-9]+$")) {
             wrapper(builder, "deluxe");
         } else if ((result.contains("5") || number % 5 == 0) &&
             (result.contains("3") ||number % 3 == 0)) {
