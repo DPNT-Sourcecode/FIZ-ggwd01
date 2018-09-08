@@ -11,20 +11,36 @@ public class FizzBuzzSolution {
             (result.contains("3") ||number % 3 == 0)) {
             wrapper(builder, "fizz buzz");
             if (number > 10 && allSame(result)) {
-                wrapper(builder, " deluxe");
+                if (number % 2 == 0){
+                    wrapper(builder, " deluxe");
+                } else {
+                    wrapper(builder, " fake deluxe");
+                }
             }
         } else if (result.contains("5") || number % 5 == 0) {
             wrapper(builder, "buzz");
             if (number > 10 && allSame(result)) {
-                wrapper(builder, " deluxe");
+                if (number % 2 == 0){
+                    wrapper(builder, " deluxe");
+                } else {
+                    wrapper(builder, " fake deluxe");
+                }
             }
         } else if (result.contains("3") ||number % 3 == 0) {
             wrapper(builder, "fizz");
             if (number > 10 && allSame(result)) {
-                wrapper(builder, " deluxe");
+                if (number % 2 == 0){
+                    wrapper(builder, " deluxe");
+                } else {
+                    wrapper(builder, " fake deluxe");
+                }
             }
         } else if (number > 10 && allSame(result)) {
-            wrapper(builder, "deluxe");
+            if (number % 2 == 0){
+                wrapper(builder, "deluxe");
+            } else {
+                wrapper(builder, "fake deluxe");
+            }
         } else {
             wrapper(builder, String.valueOf(number));
         }
