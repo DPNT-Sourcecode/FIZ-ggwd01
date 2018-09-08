@@ -24,7 +24,7 @@ public class FizzBuzzSolution {
                 wrapper(builder, " deluxe");
             }
         } else if (number > 10 && allSame(result)) {
-            wrapper(builder, " deluxe");
+            wrapper(builder, "deluxe");
         } else {
             wrapper(builder, String.valueOf(number));
         }
