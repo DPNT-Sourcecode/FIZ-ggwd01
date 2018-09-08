@@ -14,18 +14,26 @@ public class FizzBuzzSolution {
                 } else {
                     wrapper(builder, "fizz buzz fake deluxe");
                 }
-        } else if (result.contains("5") || number % 5 == 0) {
-                if (number % 2 == 0){
-                    wrapper(builder, "buzz deluxe");
+        } else if (result.contains("5")) {
+                if (number % 5 == 0) {
+                    if (number % 2 == 0) {
+                        wrapper(builder, "buzz deluxe");
+                    } else {
+                        wrapper(builder, "buzz fake deluxe");
+                    }
                 } else {
-                    wrapper(builder, "buzz fake deluxe");
+                    wrapper(builder, "buzz");
                 }
-        } else if (result.contains("3") ||number % 3 == 0) {
-                if (number % 2 == 0){
+        } else if (result.contains("3")) {
+            if (number % 3 == 0) {
+                if (number % 2 == 0) {
                     wrapper(builder, "fizz deluxe");
                 } else {
                     wrapper(builder, "fizz fake deluxe");
                 }
+            } else {
+                wrapper(builder, "fizz");
+            }
 //        } else if (number > 10 && allSame(result)) {
 //            if (number % 2 == 0){
 //                wrapper(builder, "deluxe");
