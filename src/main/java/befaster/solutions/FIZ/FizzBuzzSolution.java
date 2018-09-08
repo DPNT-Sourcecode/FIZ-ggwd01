@@ -9,38 +9,29 @@ public class FizzBuzzSolution {
         String result = String.valueOf(number);
         if ((result.contains("5") || number % 5 == 0) &&
             (result.contains("3") ||number % 3 == 0)) {
-            wrapper(builder, "fizz buzz");
-            if (number > 10 && allSame(result)) {
                 if (number % 2 == 0){
-                    wrapper(builder, " deluxe");
+                    wrapper(builder, "fizz buzz deluxe");
                 } else {
-                    wrapper(builder, " fake deluxe");
+                    wrapper(builder, "fizz buzz fake deluxe");
                 }
-            }
         } else if (result.contains("5") || number % 5 == 0) {
-            wrapper(builder, "buzz");
-            if (number > 10 && allSame(result)) {
                 if (number % 2 == 0){
-                    wrapper(builder, " deluxe");
+                    wrapper(builder, "buzz deluxe");
                 } else {
-                    wrapper(builder, " fake deluxe");
+                    wrapper(builder, "buzz fake deluxe");
                 }
-            }
         } else if (result.contains("3") ||number % 3 == 0) {
-            wrapper(builder, "fizz");
-            if (number > 10 && allSame(result)) {
                 if (number % 2 == 0){
-                    wrapper(builder, " deluxe");
+                    wrapper(builder, "fizz deluxe");
                 } else {
-                    wrapper(builder, " fake deluxe");
+                    wrapper(builder, "fizz fake deluxe");
                 }
-            }
-        } else if (number > 10 && allSame(result)) {
-            if (number % 2 == 0){
-                wrapper(builder, "deluxe");
-            } else {
-                wrapper(builder, "fake deluxe");
-            }
+//        } else if (number > 10 && allSame(result)) {
+//            if (number % 2 == 0){
+//                wrapper(builder, "deluxe");
+//            } else {
+//                wrapper(builder, "fake deluxe");
+//            }
         } else {
             wrapper(builder, String.valueOf(number));
         }
