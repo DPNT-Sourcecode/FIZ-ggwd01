@@ -7,15 +7,22 @@ public class FizzBuzzSolution {
         StringBuilder builder = new StringBuilder();
 
         String result = String.valueOf(number);
-        if (number > 10 && allSame(result)) {
-            wrapper(builder, "deluxe");
-        } else if ((result.contains("5") || number % 5 == 0) &&
+        if ((result.contains("5") || number % 5 == 0) &&
             (result.contains("3") ||number % 3 == 0)) {
             wrapper(builder, "fizz buzz");
+            if (number > 10 && allSame(result)) {
+                wrapper(builder, " deluxe");
+            }
         } else if (result.contains("5") || number % 5 == 0) {
             wrapper(builder, "buzz");
+            if (number > 10 && allSame(result)) {
+                wrapper(builder, " deluxe");
+            }
         } else if (result.contains("3") ||number % 3 == 0) {
             wrapper(builder, "fizz");
+            if (number > 10 && allSame(result)) {
+                wrapper(builder, " deluxe");
+            }
         } else {
             wrapper(builder, String.valueOf(number));
         }
