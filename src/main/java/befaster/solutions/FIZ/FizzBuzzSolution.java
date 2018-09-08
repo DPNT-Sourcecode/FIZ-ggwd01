@@ -23,6 +23,8 @@ public class FizzBuzzSolution {
             if (number > 10 && allSame(result)) {
                 wrapper(builder, " deluxe");
             }
+        } else if (number > 10 && allSame(result)) {
+            wrapper(builder, " deluxe");
         } else {
             wrapper(builder, String.valueOf(number));
         }
