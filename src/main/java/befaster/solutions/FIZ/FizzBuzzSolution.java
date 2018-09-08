@@ -5,12 +5,14 @@ public class FizzBuzzSolution {
 
     public String fizzBuzz(Integer number) {
         StringBuilder builder = new StringBuilder();
-      //  for (int i = 1; i <= number; i++) {
-            if ((number % 5 == 0) && (number % 3 == 0)) {
+
+        String result = String.valueOf(number);
+            if ((result.contains("5") || number % 5 == 0) &&
+                (result.contains("3") ||number % 3 == 0)) {
                 wrapper(builder, "fizz buzz");
-            } else if (number % 5 == 0) {
+            } else if (result.contains("5") || number % 5 == 0) {
                 wrapper(builder, "buzz");
-            } else if (number % 3 == 0) {
+            } else if (result.contains("3") ||number % 3 == 0) {
                 wrapper(builder, "fizz");
             } else {
                 wrapper(builder, String.valueOf(number));
