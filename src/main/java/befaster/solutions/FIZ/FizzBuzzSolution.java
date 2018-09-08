@@ -14,8 +14,8 @@ public class FizzBuzzSolution {
                 } else {
                     wrapper(builder, "fizz buzz fake deluxe");
                 }
-        } else if (number % 5 == 0) {
-                if (result.contains("5")) {
+        } else if (result.contains("5") || number % 5 == 0) {
+                if (result.contains("5") && number % 5 == 0) {
                     if (number % 2 == 0) {
                         wrapper(builder, "buzz deluxe");
                     } else {
@@ -24,8 +24,8 @@ public class FizzBuzzSolution {
                 } else {
                     wrapper(builder, "buzz");
                 }
-        } else if (number % 3 == 0) {
-            if (result.contains("3")) {
+        } else if (result.contains("3") || number % 3 == 0) {
+            if (result.contains("3") && number % 3 == 0) {
                 if (number % 2 == 0) {
                     wrapper(builder, "fizz deluxe");
                 } else {
